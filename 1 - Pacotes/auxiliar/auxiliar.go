@@ -1,0 +1,11 @@
+package auxiliar
+
+import "fmt"
+
+// a FUNCAO ESTÁ COM INICIAL MAIÚSCULA, ELA SERÁ VISÍVEL FORA DO PACOTE
+func Escrever() {
+	fmt.Println("Escrevendo do pacote auxiliar")
+	escrever2() // ESSA FUNCAO ESTÁ DENTRO DO MESMO PACOTE, ENTAO POSSO CHAMAR ELA, MESMO SENDO "PRIVADA" (LETRA MINUSCULA)
+}
+
+// FUNCAO COM LETRA MINUSCULA, ELA NÃO SERÁ VISÍVEL FORA DO PACOTE
